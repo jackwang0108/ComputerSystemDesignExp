@@ -1,0 +1,3 @@
+[submodule "gem5-assignment-template"]
+	path = gem5-assignment-template
+	url = https://github.com/jlpteaching/gem5-assignment-template.git

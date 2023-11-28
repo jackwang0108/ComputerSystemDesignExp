@@ -1,0 +1,120 @@
+Global frequency set at 1000000000000 ticks per second
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 21 2023 14:10:12
+gem5 started Nov 22 2023 12:31:48
+gem5 executing on jack-Alienware-m15-R3, pid 37474
+command line: gem5.opt /home/jack/projects/ComputerSystemDesignExp/gem5-assignment-template/run.py -s 2 -c simple -m 1600 -f 1 -n 224
+
+Initializing the matrices...Done.
+Beginning multiply...
+Done.
+Time 72.2883 ms
+CPU: HW1TimingSimpleCPU
+Memory: HW1DDR3_1600_8x8
+Simulation Finished
+===========================================================
+
+
+Global frequency set at 1000000000000 ticks per second
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 21 2023 14:10:12
+gem5 started Nov 22 2023 12:35:02
+gem5 executing on jack-Alienware-m15-R3, pid 37524
+command line: gem5.opt /home/jack/projects/ComputerSystemDesignExp/gem5-assignment-template/run.py -s 2 -c minor -m 1600 -f 1 -n 224
+
+Initializing the matrices...Done.
+Beginning multiply...
+Done.
+Time 33.708 ms
+CPU: HW1MinorCPU
+Memory: HW1DDR3_1600_8x8
+Simulation Finished
+===========================================================
+
+
+Global frequency set at 1000000000000 ticks per second
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 21 2023 14:10:12
+gem5 started Nov 22 2023 12:40:28
+gem5 executing on jack-Alienware-m15-R3, pid 37576
+command line: gem5.opt /home/jack/projects/ComputerSystemDesignExp/gem5-assignment-template/run.py -s 2 -c simple -m 2133 -f 1 -n 224
+
+Initializing the matrices...Done.
+Beginning multiply...
+Done.
+Time 72.2883 ms
+CPU: HW1TimingSimpleCPU
+Memory: HW1DDR3_1600_8x8
+Simulation Finished
+===========================================================
+
+
+Global frequency set at 1000000000000 ticks per second
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 21 2023 14:10:12
+gem5 started Nov 22 2023 12:43:38
+gem5 executing on jack-Alienware-m15-R3, pid 37628
+command line: gem5.opt /home/jack/projects/ComputerSystemDesignExp/gem5-assignment-template/run.py -s 2 -c minor -m 2133 -f 1 -n 224
+
+Initializing the matrices...Done.
+Beginning multiply...
+Done.
+Time 33.708 ms
+CPU: HW1MinorCPU
+Memory: HW1DDR3_1600_8x8
+Simulation Finished
+===========================================================
+
+
+Global frequency set at 1000000000000 ticks per second
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 21 2023 14:10:12
+gem5 started Nov 22 2023 12:49:04
+gem5 executing on jack-Alienware-m15-R3, pid 37695
+command line: gem5.opt /home/jack/projects/ComputerSystemDesignExp/gem5-assignment-template/run.py -s 2 -c simple -m LPDDR3 -f 1 -n 224
+
+Initializing the matrices...Done.
+Beginning multiply...
+Done.
+Time 72.2883 ms
+CPU: HW1TimingSimpleCPU
+Memory: HW1DDR3_1600_8x8
+Simulation Finished
+===========================================================
+
+
+Global frequency set at 1000000000000 ticks per second
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.1.0
+gem5 compiled Nov 21 2023 14:10:12
+gem5 started Nov 22 2023 12:52:09
+gem5 executing on jack-Alienware-m15-R3, pid 37796
+command line: gem5.opt /home/jack/projects/ComputerSystemDesignExp/gem5-assignment-template/run.py -s 2 -c minor -m LPDDR3 -f 1 -n 224
+
+Initializing the matrices...Done.
+Beginning multiply...
+Done.
+Time 33.708 ms
+CPU: HW1MinorCPU
+Memory: HW1DDR3_1600_8x8
+Simulation Finished
+===========================================================
+
+

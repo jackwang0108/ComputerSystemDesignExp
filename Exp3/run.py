@@ -70,6 +70,25 @@ def simulation_step1(size: int, freq: int, cpu: Union[HW1TimingSimpleCPU, HW1Min
 
 
 def simulation2(size: int, cpu: Union[HW1TimingSimpleCPU, HW1MinorCPU], memory: Union[HW1DDR3_1600_8x8, HW1DDR3_2133_8x8, HW1LPDDR3_1600_1x32]):
+    """
+    Runs a simulation of a matrix multiplication workload on a specific combination of CPU type and memory type using the gem5 simulator.
+
+    Args:
+        size (int): The size of the matrix multiplication workload.
+        cpu: The CPU type. Only instances of HW1MinorCPU or HW1TimingSimpleCPU are allowed.
+        memory: The memory type. Only instances of HW1DDR3_1600_8x8, HW1DDR3_2133_8x8, or HW1LPDDR3_1600_1x32 are allowed.
+
+    Returns:
+        None
+
+    Raises:
+        AssertionError: If the specified size is less than or equal to 1.
+        AssertionError: If the specified CPU type is not allowed.
+        AssertionError: If the specified memory type is not allowed.
+
+    Examples:
+        simulation2(224, HW1TimingSimpleCPU(), HW1DDR3_1600_8x8())
+    """
     assert 1 <= size, f"size should greater than 1: {size}"
     assert isinstance(cpu, (HW1MinorCPU, HW1TimingSimpleCPU)
                       ), f"Not allowed CPU type: {type(cpu)}"

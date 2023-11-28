@@ -5,7 +5,9 @@ dir=$(dirname "$(dirname "$(readlink -f "$0")")")
 # 下载依赖
 sudo apt install build-essential git m4 scons zlib1g zlib1g-dev libprotobuf-dev protobuf-compiler libprotoc-dev libgoogle-perftools-dev python3-dev python-is-python3 libboost-all-dev pkg-config
 # 下载Gem5
-git clone https://github.com/gem5/gem5 "${dir}"/gem5
+if [[ -d "${dir}"/gem5 ]]; then
+    git clone https://github.com/gem5/gem5 "${dir}"/gem5
+fi
 # 下载Python依赖
 python -m pip install -r "${dir}"/gem5/requirements.txt
 # 修改编译目标

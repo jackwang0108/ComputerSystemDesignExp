@@ -1,0 +1,45 @@
+Workload: DAXPYWorkload, fp_issue_latency: 3, fp_operation_latency: 2
+board.processor.cores.core.commitStats0.numFpInsts       524289                       # Number of float instructions (Count)
+board.processor.cores.core.commitStats0.numIntInsts       786441                       # Number of integer instructions (Count)
+board.processor.cores.core.commitStats0.numLoadInsts       262145                       # Number of load instructions (Count)
+board.processor.cores.core.commitStats0.numStoreInsts       131072                       # Number of store instructions (Count)
+
+Workload: HelloWorkload, fp_issue_latency: 3, fp_operation_latency: 2
+board.processor.cores.core.commitStats0.numFpInsts       524289                       # Number of float instructions (Count)
+board.processor.cores.core.commitStats0.numIntInsts       786441                       # Number of integer instructions (Count)
+board.processor.cores.core.commitStats0.numLoadInsts       262145                       # Number of load instructions (Count)
+board.processor.cores.core.commitStats0.numStoreInsts       131072                       # Number of store instructions (Count)
+
+
+
+
+Workload: DAXPYWorkload, fp_issue_latency: 2, fp_operation_latency: 3
+board.processor.cores.core.commitStats0.numFpInsts       524289                       # Number of float instructions (Count)
+board.processor.cores.core.commitStats0.numIntInsts       786441                       # Number of integer instructions (Count)
+board.processor.cores.core.commitStats0.numLoadInsts       262145                       # Number of load instructions (Count)
+board.processor.cores.core.commitStats0.numStoreInsts       131072                       # Number of store instructions (Count)
+
+Workload: HelloWorkload, fp_issue_latency: 2, fp_operation_latency: 3
+board.processor.cores.core.commitStats0.numFpInsts       524289                       # Number of float instructions (Count)
+board.processor.cores.core.commitStats0.numIntInsts       786441                       # Number of integer instructions (Count)
+board.processor.cores.core.commitStats0.numLoadInsts       262145                       # Number of load instructions (Count)
+board.processor.cores.core.commitStats0.numStoreInsts       131072                       # Number of store instructions (Count)
+
+
+
+
+Workload: DAXPYWorkload, fp_issue_latency: 6, fp_operation_latency: 1
+board.processor.cores.core.commitStats0.numFpInsts       524289                       # Number of float instructions (Count)
+board.processor.cores.core.commitStats0.numIntInsts       786441                       # Number of integer instructions (Count)
+board.processor.cores.core.commitStats0.numLoadInsts       262145                       # Number of load instructions (Count)
+board.processor.cores.core.commitStats0.numStoreInsts       131072                       # Number of store instructions (Count)
+
+Workload: HelloWorkload, fp_issue_latency: 6, fp_operation_latency: 1
+board.processor.cores.core.commitStats0.numFpInsts       524289                       # Number of float instructions (Count)
+board.processor.cores.core.commitStats0.numIntInsts       786441                       # Number of integer instructions (Count)
+board.processor.cores.core.commitStats0.numLoadInsts       262145                       # Number of load instructions (Count)
+board.processor.cores.core.commitStats0.numStoreInsts       131072                       # Number of store instructions (Count)
+
+
+
+

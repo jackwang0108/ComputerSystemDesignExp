@@ -1,0 +1,12 @@
+Workload: DAXPYWorkload
+board.processor.cores.core.commitStats0.numFpInsts       524289                       # Number of float instructions (Count)
+board.processor.cores.core.commitStats0.numIntInsts       786441                       # Number of integer instructions (Count)
+board.processor.cores.core.commitStats0.numLoadInsts       262145                       # Number of load instructions (Count)
+board.processor.cores.core.commitStats0.numStoreInsts       131072                       # Number of store instructions (Count)
+
+Workload: HelloWorkload
+board.processor.cores.core.commitStats0.numFpInsts       524289                       # Number of float instructions (Count)
+board.processor.cores.core.commitStats0.numIntInsts       786441                       # Number of integer instructions (Count)
+board.processor.cores.core.commitStats0.numLoadInsts       262145                       # Number of load instructions (Count)
+board.processor.cores.core.commitStats0.numStoreInsts       131072                       # Number of store instructions (Count)
+

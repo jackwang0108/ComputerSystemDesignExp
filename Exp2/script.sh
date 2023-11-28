@@ -11,3 +11,6 @@ cp "${dir}"/Exp2/run.py "${dir}"/gem5-assignment-template
 
 # 运行
 gem5.opt "${dir}"/gem5-assignment-template/run.py
+
+# 打包
+tar czvf "${dir}"/Exp2.tar.gz -C "${dir}"/Exp2 .

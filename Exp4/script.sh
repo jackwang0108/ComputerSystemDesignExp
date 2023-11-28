@@ -7,6 +7,8 @@ dir=$(dirname "$(dirname "$(readlink -f "$0")")")
 cd "${dir}"/gem5-assignment-template && git checkout assign-2
 # 复制脚本
 cp "${dir}"/"${exp}"/run.py "${dir}"/gem5-assignment-template
+# 修复语法错误
+cp "${dir}"/"${exp}"/cache_hierarchies.py "${dir}"/gem5-assignment-template/components
 # 复制workload
 mkdir -p ~/.cache/gem5 && cp "${dir}"/${exp}/riscv-hello ~/.cache/gem5
 
@@ -52,4 +54,7 @@ for latency in "${fp_latencies[@]}"; do
 done
 
 # 打包
-# tar czvf "${dir}"/Exp3.tar.gz -C "${dir}"/Exp3 .
+tar czvf "${dir}"/${exp}.tar.gz -C "${dir}"/${exp} .
+
+# 重置修改方便下个实验
+cd "${dir}"/gem5-assignment-template && git checkout -- componenets/cache_hierarchies.py

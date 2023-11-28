@@ -1,3 +1,6 @@
 [submodule "gem5-assignment-template"]
 	path = gem5-assignment-template
 	url = https://github.com/jlpteaching/gem5-assignment-template.git
+[submodule "gem5"]
+	path = gem5
+	url = https://github.com/gem5/gem5.git

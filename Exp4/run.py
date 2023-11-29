@@ -94,9 +94,9 @@ def simulation_step3(workload: Union[HelloWorkload, DAXPYWorkload], int_operatio
 
 
 def main():
-    arg_parser = ArgumentParser(description="Simulator for Exp3")
+    arg_parser = ArgumentParser(description="Simulator for Exp4")
     arg_parser.add_argument('-s', '--step', type=int,
-                            help="Which step of Epx3")
+                            help="Which step of Epx4")
     arg_parser.add_argument('-w', '--workload', type=str, help="Which workload to use")
     arg_parser.add_argument('-fi', '--fp_issue_latency', type=int,
                             help="What fp issue latency to use")

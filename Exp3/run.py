@@ -45,17 +45,15 @@ def simulation_step1(size: int, freq: int, cpu: Union[HW1TimingSimpleCPU, HW1Min
     """
     assert 1 <= size, f"size should greater than 1: {size}"
     assert freq in {1, 2, 4}, f"Not allow freq for exp1: {freq}"
-    assert isinstance(cpu, (HW1MinorCPU, HW1TimingSimpleCPU)
-                      ), f"Not allow CPU type: {type(cpu)}"
+    assert isinstance(
+        cpu, (HW1MinorCPU, HW1TimingSimpleCPU)
+    ), f"Not allow CPU type: {type(cpu)}"
 
     memory = HW1DDR3_1600_8x8()
     cache = HW1MESITwoLevelCache()
     workload = MatMulWorkload(size)
     board = HW1RISCVBoard(
-        clk_freq=f"{freq}GHz",
-        processor=cpu,
-        memory=memory,
-        cache_hierarchy=cache
+        clk_freq=f"{freq}GHz", processor=cpu, memory=memory, cache_hierarchy=cache
     )
     board.set_workload(workload)
     simulator = Simulator(board=board, full_system=False)
@@ -69,7 +67,11 @@ def simulation_step1(size: int, freq: int, cpu: Union[HW1TimingSimpleCPU, HW1Min
     )
 
 
-def simulation2(size: int, cpu: Union[HW1TimingSimpleCPU, HW1MinorCPU], memory: Union[HW1DDR3_1600_8x8, HW1DDR3_2133_8x8, HW1LPDDR3_1600_1x32]):
+def simulation2(
+    size: int,
+    cpu: Union[HW1TimingSimpleCPU, HW1MinorCPU],
+    memory: Union[HW1DDR3_1600_8x8, HW1DDR3_2133_8x8, HW1LPDDR3_1600_1x32],
+):
     """
     Runs a simulation of a matrix multiplication workload on a specific combination of CPU type and memory type using the gem5 simulator.
 
@@ -90,19 +92,18 @@ def simulation2(size: int, cpu: Union[HW1TimingSimpleCPU, HW1MinorCPU], memory: 
         simulation2(224, HW1TimingSimpleCPU(), HW1DDR3_1600_8x8())
     """
     assert 1 <= size, f"size should greater than 1: {size}"
-    assert isinstance(cpu, (HW1MinorCPU, HW1TimingSimpleCPU)
-                      ), f"Not allowed CPU type: {type(cpu)}"
     assert isinstance(
-        memory, (HW1DDR3_1600_8x8, HW1DDR3_2133_8x8, HW1LPDDR3_1600_1x32)), f"Now allowed memory: {type(memory)}"
+        cpu, (HW1MinorCPU, HW1TimingSimpleCPU)
+    ), f"Not allowed CPU type: {type(cpu)}"
+    assert isinstance(
+        memory, (HW1DDR3_1600_8x8, HW1DDR3_2133_8x8, HW1LPDDR3_1600_1x32)
+    ), f"Now allowed memory: {type(memory)}"
 
     memory = HW1DDR3_1600_8x8()
     cache = HW1MESITwoLevelCache()
     workload = MatMulWorkload(size)
     board = HW1RISCVBoard(
-        clk_freq="4GHz",
-        processor=cpu,
-        memory=memory,
-        cache_hierarchy=cache
+        clk_freq="4GHz", processor=cpu, memory=memory, cache_hierarchy=cache
     )
     board.set_workload(workload)
     simulator = Simulator(board=board, full_system=False)
@@ -118,15 +119,17 @@ def simulation2(size: int, cpu: Union[HW1TimingSimpleCPU, HW1MinorCPU], memory: 
 
 def main():
     arg_parser = ArgumentParser(description="Simulator for Exp3")
-    arg_parser.add_argument('-s', '--step', type=int,
-                            help="Which step of epx2")
-    arg_parser.add_argument('-c', '--cpu', type=str, help="Which cpu to use")
-    arg_parser.add_argument('-f', '--freq', type=int,
-                            help="What frequency to use")
-    arg_parser.add_argument('-m', '--memory', type=str, default=HW1MESITwoLevelCache(),
-                            help="Which memory to use")
-    arg_parser.add_argument('-n', '--num', type=int,
-                            help="size of the matrix")
+    arg_parser.add_argument("-s", "--step", type=int, help="Which step of epx3")
+    arg_parser.add_argument("-c", "--cpu", type=str, help="Which cpu to use")
+    arg_parser.add_argument("-f", "--freq", type=int, help="What frequency to use")
+    arg_parser.add_argument(
+        "-m",
+        "--memory",
+        type=str,
+        default=HW1MESITwoLevelCache(),
+        help="Which memory to use",
+    )
+    arg_parser.add_argument("-n", "--num", type=int, help="size of the matrix")
     args = arg_parser.parse_args()
 
     assert args.step in [1, 2], "Step should be 1 or 2"
